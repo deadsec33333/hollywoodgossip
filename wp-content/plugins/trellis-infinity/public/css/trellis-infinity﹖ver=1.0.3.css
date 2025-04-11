@@ -1,0 +1,32 @@
+main {
+  position: relative;
+}
+.pagination,
+.next.page-numbers,
+.nav-next,
+.nav-previous {
+  bottom: 80vh;
+  height: 30vh;
+  position: absolute;
+  visibility: hidden;
+  width: auto;
+  max-width: 100%;
+}
+.post-navigation {
+  visibility: hidden;
+}
+.post-navigation .post-thumbnail {
+  display: none;
+}
+.navigation.pagination ~ .article.excerpt {
+  animation: fadeInAnimation ease 3s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
